@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Nunito Sans', sans-serif;
+    --text-color:#333235;
+    --ui-brand-color: #f4581f;
+    --background-color: #ffffff;
+
+img {
+    display: block;
+    width: 100%;
+    }
+    
+    
+.container {
+        max-width: 1200px;
+        margin: auto;
+    }
+    
