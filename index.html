@@ -4,23 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book a car</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Teko:wght@500&display=swap" rel="stylesheet">
+    <title>Book a car</title>
 </head>
 <body>
     <header id="header">
+        <div class="header-container">
         <div>
             <img id="header-img" src="img/logo.svg" alt="logotype">
         </div>
         <nav id="nav-bar" class="header-nav">
             <ul>
                 <li>
-                    <a  class="nav-link" href="#">How It Works</a>
+                    <a  class="nav-link" href="#">Benefits</a>
                 </li>
                 <li>
                     <a  class="nav-link" href="#">Our Cars</a>
@@ -30,14 +26,14 @@
                 </li>
             </ul>
         </nav>
-        <div class="container">
-            <h1>BUSINESS AND PERSONAL LEASING EXPERTS</h1>
-            <p>Book your car in one click</p>
+        </div>
+        <div class="banner-container">
+            <h1 class="title">BUSINESS AND PERSONAL LEASING EXPERTS</h1>
+            <p class="subtitle">Book your car in one click</p>
             <form id="form" action="">
                 <input id="email" name="email" type="email" placeholder="Enter your email">
                 <input class="button" type="submit" name="submit" id="submit" value="Book now">
             </form>
-            <img class="header-banner" src="img/Banner-car-img.jpeg" alt="car">
         </div>
     </header>
     <main>
@@ -48,7 +44,7 @@
                         <img src="img/icon-credit card.svg" alt="credit card">
                     </div>
                     <div class="benefits-item-description">
-                        <h3>BETTER THAN COMPETITORS</h3>
+                        <h4>BETTER THAN COMPETITORS</h4>
                     <p>Have you found a better deal in a different company? Reach out to us and get 1 month for free.</p>
                     </div>
                 </div>
@@ -57,7 +53,7 @@
                         <img src="img/icon-ratings.svg" alt="car rating">
                     </div>
                     <div class="benefits-item-description">
-                        <h3>AFFORDABLE RATES</h3>
+                        <h4>AFFORDABLE RATES</h4>
                     <p>We are constantly keeping an eye on the prices to make sure we'll get you the best deal there is on the market.</p>
                     </div>
                 </div>
@@ -66,11 +62,41 @@
                         <img src="img/icon-car rental.svg" alt="car document">
                     </div>
                     <div class="benefits-item-description">
-                        <h3>ALL LEGAL PAPERWORK FILED</h3>
+                        <h4>ALL LEGAL PAPERWORK FILED</h4>
                     <p>There's a warranty for every car of the company. All the vehicles are taxed and have the breakdown cover.</p>
                     </div>
                 </div>
         </section>
+        <section>
+            <iframe id="video" width="1237" height="696" src="https://www.youtube.com/embed/qKATmVmJzr0" title="An Introduction to Car Leasing | Intelligent Car Leasing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <section class="cars">
+            <h2>CARS</h2>
+            <h3>AVAILABLE OPTIONS</h3>
+            <p>All these vehicles are available for lease right now.</p>
+            <div class="product card">
+                <img src="img/rolls-royce.png" alt="rolls-royce">
+                <h4>ROLLS-ROYCE</h4>
+                <p>$505.95 / month</p>
+                <p>Rolls-Royce Phantom VIII 6.75 L (412 cu in)</p>
+                <p>Learn more</p>
+            </div>
+            <div class="product card">
+                <img src="img/bmw.png" alt="BMW">
+                <h4>BMW</h4>
+                <p>$374.45 / month</p>
+                <p>2021 BMW X6 xDrive 40i Sports Activity Coupe</p>
+                <p>Learn more</p>
+            </div>
+            <div class="product card">
+                <img src="img/honda.png" alt="HONDA">
+                <h4>HONDA</h4>
+                <p>$199.95 / month</p>
+                <p>Honda Accord</p>
+                <p>Sport Special Edition</p>
+            </div>
+        </section>
+        
     </main>
     
 

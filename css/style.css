@@ -1,93 +1,52 @@
-/* #header {
-    display: flex;
-    justify-content:space-between
+#header {
+    background: url(../img/Banner-car-img.jpeg) no-repeat center top;
+    background-size: cover;
+    background-position: center;
+    min-height: 700px;
 }
+
 #header-img {
     width: 100px;
-    height: 20px; */
-/* } */
-.header {
-    background: url(../img//Banner-car-img.jpeg) no-repeat center top;
+    height: 30px;
 }
-/* .nav-link {
-    text-decoration: none;
-    color: var(--text-color);
-    font-size: 0.8em;
-    margin-right: 20px;
+
+.header-container {
+    position: fixed;
+  top: 0;
+  min-height: 75px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color:transparent;
+}
+
+#nav-bar > ul {
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex: 1;
     align-items: center;
 }
-
-.container {
-    display: flex;
-    justify-content:left;
-    margin-bottom: 30px;
-    margin-top: 30px;
+li {
+    list-style: none;
 }
-#video {
-    height: 200px;
-    width: 300px;
-}
-#form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-}
-#email {
-    width: 200px;
-    height: 30px;
-}
-#submit {
-    text-transform: uppercase;
-    background-color: #f1c40f;
-    border: none;
-    height: 30px;
-    font-weight: 600;
-}
-@media (min-width: 600px) {
-    #header-img {
-        width: 300px;
-        height: 40px;
-    }
-    .nav-link {
-        font-size: 1em;
-        margin-right: 30px;
-    }
-    #video {
-        height: 300px;
-        width: 500px;
-    }
-
-}
-
-
-
-/*  */
-.header-nav {
-    display: flex;
-    flex-direction: column;
 
 .nav-link {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--main-text-color);
+}
 
-/* .header-nav {
-        flex-direction: row;
-        justify-content: space-around;
-        flex: 1;
-        align-items: center;
-        z-index: 2; */
-    /* }
-.header-banner {
-        background-image: url(../img//Banner-car-img.jpeg);
-        background-size: cover;
-        background-position: center;
-        min-height: 400px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        z-index: 1; */ 
+.banner-container {
+    display: flex;
+    justify-content:left;
+    padding-top: 100px;
+    align-items: center;
+    flex-direction: column;
+    }
+.title {
+    font-family: 'Teko', sans-serif;
+    color: var(--main-text-color);
+    font-size: 60px;
+    font-weight: 500;
+}
