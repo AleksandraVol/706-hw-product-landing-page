@@ -8,96 +8,108 @@
     <title>Book a car</title>
 </head>
 <body>
-    <header id="header">
-        <div class="header-container">
-        <div>
+    <div class="container">
+<header id="header">
+    <div class="header-container">
+        <div class="header-logo">
             <img id="header-img" src="img/logo.svg" alt="logotype">
         </div>
         <nav id="nav-bar" class="header-nav">
             <ul>
                 <li>
-                    <a  class="nav-link" href="#">Benefits</a>
+                    <a class="nav-link" href="#">Benefits</a>
                 </li>
                 <li>
-                    <a  class="nav-link" href="#">Our Cars</a>
+                    <a class="nav-link" href="#">Our Cars</a>
                 </li>
                 <li>
-                    <a  class="nav-link" href="#">Contacts</a>
+                    <a class="nav-link" href="#">Contacts</a>
                 </li>
             </ul>
         </nav>
+    </div>
+    <div class="banner-container">
+        <h1 class="banner-title">BUSINESS AND PERSONAL LEASING EXPERTS</h1>
+        <p class="banner-subtitle">Book your car in one click</p>
+        <form id="form" action="#">
+            <input id="email" name="email" type="email" placeholder="Enter your email">
+            <input class="button" type="submit" name="submit" id="submit" value="Book now">
+        </form>
+    </div>
+</header>
+<main>
+    <section class="benefits">
+        <!-- <h2>Benefits</h2> -->
+        <div class="benefits-item">
+            <div class="benefits-item-icon">
+                <img class="icon-img" src="img/icon-credit-card.svg" alt="credit card">
+            </div>
+            <div class="benefits-item-description">
+                <h4 class="description-title">BETTER THAN COMPETITORS</h4>
+                <p class="benefits-description-text">Have you found a better deal in a different company? Reach out to
+                    us and get 1 month for free.</p>
+            </div>
         </div>
-        <div class="banner-container">
-            <h1 class="title">BUSINESS AND PERSONAL LEASING EXPERTS</h1>
-            <p class="subtitle">Book your car in one click</p>
-            <form id="form" action="">
-                <input id="email" name="email" type="email" placeholder="Enter your email">
-                <input class="button" type="submit" name="submit" id="submit" value="Book now">
-            </form>
+        <div class="benefits-item">
+            <div class="benefits-item-icon">
+                <img class="icon-img" src="img/icon-ratings.svg" alt="car rating">
+            </div>
+            <div class="benefits-item-description">
+                <h4 class="description-title">AFFORDABLE RATES</h4>
+                <p class="benefits-description-text">We are constantly keeping an eye on the prices to make sure we'll
+                    get you the best deal there is on the market.</p>
+            </div>
         </div>
-    </header>
-    <main>
-        <section class="benefits">
-            <h2>Benefits</h2>
-                <div class="benefits-item">
-                    <div class="benefits-item-icon">
-                        <img src="img/icon-credit card.svg" alt="credit card">
-                    </div>
-                    <div class="benefits-item-description">
-                        <h4>BETTER THAN COMPETITORS</h4>
-                    <p>Have you found a better deal in a different company? Reach out to us and get 1 month for free.</p>
-                    </div>
-                </div>
-                <div class="benefits-item">
-                    <div class="benefits-item-icon">
-                        <img src="img/icon-ratings.svg" alt="car rating">
-                    </div>
-                    <div class="benefits-item-description">
-                        <h4>AFFORDABLE RATES</h4>
-                    <p>We are constantly keeping an eye on the prices to make sure we'll get you the best deal there is on the market.</p>
-                    </div>
-                </div>
-                <div class="benefits-item">
-                    <div class="benefits-item-icon">
-                        <img src="img/icon-car rental.svg" alt="car document">
-                    </div>
-                    <div class="benefits-item-description">
-                        <h4>ALL LEGAL PAPERWORK FILED</h4>
-                    <p>There's a warranty for every car of the company. All the vehicles are taxed and have the breakdown cover.</p>
-                    </div>
-                </div>
-        </section>
-        <section>
-            <iframe id="video" width="1237" height="696" src="https://www.youtube.com/embed/qKATmVmJzr0" title="An Introduction to Car Leasing | Intelligent Car Leasing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </section>
-        <section class="cars">
-            <h2>CARS</h2>
-            <h3>AVAILABLE OPTIONS</h3>
-            <p>All these vehicles are available for lease right now.</p>
-            <div class="product card">
-                <img src="img/rolls-royce.png" alt="rolls-royce">
+        <div class="benefits-item">
+            <div class="benefits-item-icon">
+                <img class="icon-img" src="img/icon-car-rental.svg" alt="car document">
+            </div>
+            <div class="benefits-item-description">
+                <h4 class="description-title">ALL LEGAL PAPERWORK FILED</h4>
+                <p class="benefits-description-text">There's a warranty for every car of the company. All the vehicles
+                    are taxed and have the breakdown cover.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <iframe id="video" width="1237" height="696" src="https://www.youtube.com/embed/qKATmVmJzr0"
+            title="An Introduction to Car Leasing | Intelligent Car Leasing" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </section>
+    <section class="cars">
+        <h2 class="section-title">CARS</h2>
+        <h3 class="section-subtitle">AVAILABLE OPTIONS</h3>
+        <p>All these vehicles are available for lease right now.</p>
+        <div class="product-cards">
+            <div class="product-card-item">
+                <img class="product-card-img" src="img/rolls-royce.png" alt="rolls-royce">
                 <h4>ROLLS-ROYCE</h4>
                 <p>$505.95 / month</p>
                 <p>Rolls-Royce Phantom VIII 6.75 L (412 cu in)</p>
                 <p>Learn more</p>
             </div>
-            <div class="product card">
-                <img src="img/bmw.png" alt="BMW">
+            <div class="product-card-item">
+                <img class="product-card-img" src="img/bmw.png" alt="BMW">
                 <h4>BMW</h4>
                 <p>$374.45 / month</p>
                 <p>2021 BMW X6 xDrive 40i Sports Activity Coupe</p>
                 <p>Learn more</p>
             </div>
-            <div class="product card">
-                <img src="img/honda.png" alt="HONDA">
+            <div class="product-card-item">
+                <img class="product-card-img" src="img/honda.png" alt="HONDA">
                 <h4>HONDA</h4>
                 <p>$199.95 / month</p>
                 <p>Honda Accord</p>
                 <p>Sport Special Edition</p>
             </div>
-        </section>
+        </div>
         
-    </main>
+    </section>
+
+</main>
+    </div>
+    
     
 
 </body>

@@ -1,8 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Noto Sans', sans-serif;
+    overflow-x: hidden;
+    color: var(--text-color);
+    --bg-dark: #131313;
+    --main-text-color: rgb(255, 255, 255);
+    --additional-text-color: rgb(170, 164, 164);
+    --accent-color: rgb(229, 25, 55);
+}
+.container {
+    width: 100%;
+    margin: 0;
+}
+img {
+    display: block;
+    width: 100%;
+}
+
+
 #header {
     background: url(../img/Banner-car-img.jpeg) no-repeat center top;
     background-size: cover;
     background-position: center;
-    min-height: 700px;
+    min-height: 850px;
+    width: 100%;
 }
 
 #header-img {
@@ -12,24 +41,27 @@
 
 .header-container {
     position: fixed;
-  top: 0;
-  min-height: 75px;
-  padding: 0px 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color:transparent;
+    top: 0;
+    width: 100%;
+    min-height: 75px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    background-color: var(--bg-dark);
 }
-
 #nav-bar > ul {
     display: flex;
+    top: 0;
     flex-direction: row;
-    justify-content: space-around;
-    flex: 1;
+    justify-content: flex-end;
     align-items: center;
+    background-color: var(--bg-dark);
 }
 li {
     list-style: none;
+    margin-right: 15px;
 }
 
 .nav-link {
@@ -39,14 +71,116 @@ li {
 
 .banner-container {
     display: flex;
-    justify-content:left;
-    padding-top: 100px;
-    align-items: center;
+    padding-top: 300px;
+    padding-left: 50px;
+    background-position: left;
+    justify-content: center;
+    align-items: left;
     flex-direction: column;
     }
-.title {
+.banner-title {
     font-family: 'Teko', sans-serif;
     color: var(--main-text-color);
     font-size: 60px;
     font-weight: 500;
+}
+.banner-subtitle {
+    font-family: 'Noto Sans', sans-serif;
+    color: var(--main-text-color);
+    padding-bottom: 50px;
+}
+#email {
+    width: auto;
+    padding: 5px 10px;
+    height: 50px;
+}
+.button {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    width: auto;
+    height: 50px;
+    margin: 0;
+    padding: 5px 40px;
+    text-align: center;
+    white-space: nowrap;
+    font-family: 'Teko', sans-serif;
+    color: var(--main-text-color);
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.benefits {
+    display: flex;
+    margin-top: 2em;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 50px;
+}
+.icon-img {
+    width: 50px;
+    height: 50px;
+    padding-bottom: 5px;
+}
+.description-title {
+    font-family:'Teko', sans-serif;
+    font-size: 28px;
+    letter-spacing: 0.28px;
+    line-height: 28px;
+    padding-top: 0;
+    padding-bottom: 10px;
+}
+.benefits-description-text {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 17px;
+    width: 50%;
+    padding-top: 0;
+    padding-bottom: 50px;
+}
+#video {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 50px;
+    width: 80%;
+    justify-content: center;
+}
+.cars {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+
+    width: 100%;
+}
+.section-title {
+    font-family: 'Teko', sans-serif;
+    font-size: 21px;
+    justify-content: center;
+}
+.section-subtitle {
+    font-family: 'Teko', sans-serif;
+    font-size: 76px;
+    justify-content: center;
+}
+.product-cards {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    gap: 50px;
+}
+.product-card-item {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+.product-card-img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    object-position: 69% 56%;
+    overflow-wrap: break-word;
 }
